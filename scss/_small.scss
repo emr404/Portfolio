@@ -4,10 +4,11 @@
         margin-top: 5vh;
 
         h1 {
-            font-size: 50px;
+            font-size: 40px;
             color: $accentColor;
             text-align: center;
             width: 100%;
+            font-weight: 500;
 
         }
 
@@ -105,7 +106,7 @@
         position: sticky;
         top: 0;
         margin: auto;
-        margin-top: 4vh;
+        margin-top: 5vh;
 
 
         .nav-buttons {
@@ -123,7 +124,7 @@
             border: 1px solid $accentColor;
             background: black;
             text-align: center;
-            padding: 0.8em 1.3em;
+            padding: 0.8em 5vw;
             font-size: 1em;
             letter-spacing: 2px;
         }
