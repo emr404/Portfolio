@@ -11,8 +11,10 @@ $backgroundColor: black;
     text-decoration: none;
     outline: none;
 }
-body{
+
+body {
     background-color: $backgroundColor;
 }
-@import './small'
+
+@import './small';
 

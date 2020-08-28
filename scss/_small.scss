@@ -41,16 +41,20 @@
             margin-top: 7%;
 
             .resumeBtn {
-                width: 50%;
+                width: 40vw;
                 height: 40px;
                 font-size: 16px;
+                background-color: black;
+                border: none;
+                padding: 10px 7px;
+                font-size: 20px;
+                border: 1px solid $accentColor;
 
                 a {
                     text-decoration: none;
-                    border: 1px solid $accentColor;
+
                     color: gold;
-                    padding: 10px 10px;
-                    font-size: 20px;
+
                 }
 
                 a:hover {
@@ -93,6 +97,41 @@
                     }
                 }
             }
+        }
+
+    }
+
+    .navigation {
+        position: sticky;
+        top: 0;
+        margin: auto;
+        margin-top: 4vh;
+
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        a {
+            color: $accentColor;
+            text-decoration: none;
+            align-items: center;
+            border: 1px solid $accentColor;
+            background: black;
+            text-align: center;
+            padding: 0.8em 1.3em;
+            font-size: 1em;
+            letter-spacing: 2px;
+        }
+
+        a:hover {
+            color: $backgroundColor;
+            background-color: $accentColor;
+            transition: 1s;
         }
 
     }
