@@ -43,18 +43,18 @@
 
             .resumeBtn {
                 width: 40vw;
-                height: 40px;
+                height: 8vh;
                 font-size: 16px;
-                background-color: black;
+                background-color: $backgroundColor;
                 border: none;
-                padding: 10px 7px;
+                padding: 4vh auto;
                 font-size: 20px;
                 border: 1px solid $accentColor;
 
                 a {
                     text-decoration: none;
 
-                    color: gold;
+                    color: $accentColor;
 
                 }
 
@@ -133,6 +133,35 @@
             color: $backgroundColor;
             background-color: $accentColor;
             transition: 1s;
+        }
+
+    }
+
+    .skills {
+        margin-top: 10vh;
+
+        h1 {
+            color: $accentColor;
+            font-weight: 100;
+            margin-top: 5vh;
+            margin-left: 9%;
+            text-transform: uppercase;
+        }
+
+        .skills-img-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1em;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2vh 15%;
+            text-align: center;
+
+            img {
+                height: 38px;
+                width: 38px;
+                margin: auto;
+            }
         }
 
     }
