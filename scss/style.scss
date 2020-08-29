@@ -2,6 +2,9 @@ $primaryColor: white;
 $accentColor: gold;
 $backgroundColor: black;
 
+*:focus{
+    outline: 3px solid;
+}
 
 * {
     margin: 0;
@@ -15,6 +18,10 @@ $backgroundColor: black;
 body {
     background-color: $backgroundColor;
     font-family: 'Montserrat', sans-serif;
+}
+
+hr.horizontal-rule {
+    border-top: 1px dashed $accentColor;
 }
 
 
