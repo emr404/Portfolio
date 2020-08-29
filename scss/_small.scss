@@ -239,4 +239,12 @@
         }
 
     }
+
+    footer {
+        background-color: $accentColor;
+        color: $backgroundColor;
+        margin-top: 3vh;
+        text-align: center;
+        padding: .8em;
+    }
 }
