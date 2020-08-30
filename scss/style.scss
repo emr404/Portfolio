@@ -2,7 +2,7 @@ $primaryColor: white;
 $accentColor: gold;
 $backgroundColor: black;
 
-*:focus{
+*:focus {
     outline: 3px solid;
 }
 
@@ -27,3 +27,5 @@ hr.horizontal-rule {
 
 
 @import './small';
+@import './medium';
+

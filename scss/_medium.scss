@@ -1,0 +1,107 @@
+@media (min-width:426px) and (max-width:1024px) {
+    .intro {
+        width: 100%;
+        margin-top: 5vh;
+
+        h1 {
+            font-size: 50px;
+            color: $accentColor;
+            text-align: center;
+            width: 100%;
+            font-weight: 500;
+
+        }
+
+        h2 {
+            color: $primaryColor;
+            font-weight: lighter;
+            text-align: center;
+            width: 100%;
+            font-size: 30px;
+            margin-top: 1%;
+        }
+
+        .dot {
+            color: $accentColor;
+        }
+
+        p {
+            color: $primaryColor;
+            text-align: center;
+            font-size: 20px;
+            width: 90%;
+            margin: 3% 5% 0% 5%;
+        }
+
+        .resume-socials {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 7%;
+
+            .resumeBtn {
+                width: 30vw;
+                height: 6vh;
+                font-size: 16px;
+                background-color: $backgroundColor;
+                border: none;
+                padding: 5vh auto;
+                font-size: 20px;
+                border: 1px solid $accentColor;
+                color: $accentColor;
+
+                a {
+                    text-decoration: none;
+                    color: $accentColor;
+                }
+
+                a:hover {
+                    color: $backgroundColor;
+                    background-color: $accentColor;
+                    transition: 1s;
+                    border: 1px solid $accentColor;
+                }
+            }
+
+            .socials {
+                display: flex;
+                flex-direction: row;
+                margin-top: 3%;
+                width: 50%;
+                justify-content: space-evenly;
+
+                li {
+                    list-style: none;
+
+                    img {
+                        height: 38px;
+                        width: 38px;
+                    }
+
+                    a {
+                        display: grid;
+                        place-items: center;
+                        width: 30%;
+                        height: 50px;
+                        text-decoration: none;
+                        margin: 10px;
+                    }
+
+                    a:hover {
+                        border-bottom: 5px solid black;
+                        transform: translate(0px, 20px);
+                        transition: ease;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    
+}
