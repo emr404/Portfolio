@@ -101,7 +101,68 @@
 
     }
 
+    .navigation {
+        position: sticky;
+        top: 0;
+        margin: auto;
+        margin-top: 5vh;
+
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        a {
+            color: $accentColor;
+            text-decoration: none;
+            border: 1px solid $accentColor;
+            background: black;
+            text-align: center;
+            padding: 0.8em 8vw;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            color: $backgroundColor;
+            background-color: $accentColor;
+            transition: 1s;
+        }
+
+    }
+
+    .skills {
+        margin-top: 8vh;
+
+        h1 {
+            color: $accentColor;
+            font-weight: 400;
+            margin-top: 3vh;
+            margin-left: 9%;
+            text-transform: uppercase;
+        }
+
+        .skills-img-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 2%;
+            text-align: center;
+
+            img {
+                height: 38px;
+                width: 38px;
+            }
+        }
+
+    }
 
 
     
+
 }
