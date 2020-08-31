@@ -1,0 +1,98 @@
+@media (min-width:1024px) and (max-width:2440px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .intro {
+        margin: 5% 5% 0% 5%;
+
+        h1 {
+            font-size: 50px;
+            color: $accentColor;
+            font-weight: 500;
+
+        }
+
+        h2 {
+            color: $primaryColor;
+            font-weight: lighter;
+            font-size: 30px;
+            margin-top: 1%;
+        }
+
+        .dot {
+            color: $accentColor;
+        }
+
+        p {
+            margin-top: 3%;
+            color: $primaryColor;
+            text-align: left;
+            font-size: 20px;
+            width: 60%;
+        }
+
+        .resume-socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 0%;
+            margin-top: 3%;
+
+            .resumeBtn {
+
+                width: 10vw;
+                height: 6vh;
+                font-size: 16px;
+                background-color: $backgroundColor;
+                border: none;
+                padding: 9vh auto;
+                font-size: 20px;
+                border: 1px solid $accentColor;
+                color: $accentColor;
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: $accentColor;
+                }
+
+                &:hover {
+                    color: $backgroundColor;
+                    background-color: $accentColor;
+                    transition: 1s;
+                    border: 1px solid $accentColor;
+                }
+            }
+
+            .socials {
+                display: flex;
+                flex-direction: row;
+                float: right;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        display: grid;
+                        place-items: center;
+                        width: 30%;
+                        height: 50px;
+                        text-decoration: none;
+                        margin: 10px;
+                    }
+
+                    a:hover {
+                        border-bottom: 5px solid black;
+                        transform: translate(0px, 20px);
+                        transition: ease;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
