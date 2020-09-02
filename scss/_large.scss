@@ -44,21 +44,22 @@
                 width: 10vw;
                 height: 6vh;
                 font-size: 16px;
-                background-color: $backgroundColor;
+                background-color: $accentColor;
+                border: 1px solid $accentColor;
+                color: $backgroundColor;
                 border: none;
                 padding: 9vh auto;
                 font-size: 20px;
-                border: 1px solid $accentColor;
-                color: $accentColor;
+
                 cursor: pointer;
 
                 a {
                     text-decoration: none;
-                    color: $accentColor;
+                    color: $backgroundColor;
                 }
 
                 &:hover {
-                    color: $backgroundColor;
+                    color: $accentColor$backgroundColor;
                     background-color: $accentColor;
                     transition: 1s;
                     border: 1px solid $accentColor;
