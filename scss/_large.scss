@@ -137,7 +137,7 @@
             font-weight: 400;
             margin-top: 3vh;
             margin-left: 20%;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
         }
 
         .skills-img-container {
@@ -167,7 +167,7 @@
             font-weight: 400;
             margin-top: 3vh;
             margin-left: 20%;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
 
 
         }
@@ -233,10 +233,78 @@
 
     }
 
+    .contact {
+        margin-top: 5vh;
+
+        h1 {
+            color: $accentColor;
+            font-weight: 400;
+            margin-top: 3vh;
+            margin-left: 20%;
+            /* text-transform: uppercase; */
+        }
+
+        form {
+            margin: auto;
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+
+
+            input,
+            textarea {
+                width: 60vw;
+                border: none;
+                background-color: $backgroundColor;
+                margin-top: 4vh;
+                border-bottom: 1px solid $accentColor;
+                color: $primaryColor;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2em;
+                padding-left: 0.4em;
+
+
+                &::placeholder {
+                    color: $accentColor;
+                }
+
+
+            }
+
+            input {
+                padding-bottom: 0.5em;
+            }
+
+            textarea {
+                border: 1px solid $accentColor;
+                resize: none;
+                padding-top: 0.4em;
+                margin-top: 4vh;
+
+            }
+
+            button {
+                background-color: $accentColor;
+                border: none;
+                padding: 0.7em 1.2em;
+                font-size: 1em;
+                width: 20vw;
+                margin: auto;
+                margin-top: 2vh;
+                cursor: pointer;
+
+                &:hover {
+                    transition: ease 0.3s;
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+
     footer {
         background-color: $accentColor;
         color: $backgroundColor;
-        margin-top: 3vh;
+        margin-top: 5vh;
         text-align: center;
         padding: .8em;
     }
