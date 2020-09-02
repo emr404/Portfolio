@@ -20,6 +20,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 hr.horizontal-rule {
     border-top: 1px dashed $accentColor;
 }
@@ -29,4 +30,3 @@ hr.horizontal-rule {
 @import './small';
 @import './medium';
 @import './large';
-
