@@ -258,6 +258,10 @@
             display: flex;
             flex-direction: column;
 
+            input:focus::placeholder {
+                transform: translateY(-150%);
+                transition: 0.5s ease;
+            }
 
             input,
             textarea {
