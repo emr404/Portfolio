@@ -45,12 +45,12 @@
                 width: 30vw;
                 height: 6vh;
                 font-size: 16px;
-                background-color: $backgroundColor;
                 border: none;
-                padding: 9vh auto;
+                padding: 3em auto;
                 font-size: 20px;
+                background-color: $accentColor;
                 border: 1px solid $accentColor;
-                color: $accentColor;
+                color: $backgroundColor;
 
                 a {
                     text-decoration: none;
@@ -112,7 +112,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 90%;
+            width: 80%;
             margin: auto;
         }
 
@@ -122,7 +122,7 @@
             border: 1px solid $accentColor;
             background: black;
             text-align: center;
-            padding: 0.8em 8vw;
+            padding: 0.8em 4vw;
             font-size: 1.2em;
         }
 
@@ -142,7 +142,7 @@
             font-weight: 400;
             margin-top: 3vh;
             margin-left: 9%;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
         }
 
         .skills-img-container {
@@ -172,7 +172,7 @@
             color: $accentColor;
             font-weight: 400;
             margin-left: 9%;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
 
 
 
@@ -237,6 +237,74 @@
             }
         }
 
+    }
+
+    .contact {
+        margin-top: 5vh;
+
+        h1 {
+            color: $accentColor;
+            font-weight: 400;
+            margin-top: 3vh;
+            margin-left: 9%;
+            /* text-transform: uppercase; */
+        }
+
+        form {
+            margin: auto;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+
+
+            input,
+            textarea {
+                width: 80vw;
+                border: none;
+                background-color: $backgroundColor;
+                margin-top: 4vh;
+                border-bottom: 1px solid $accentColor;
+                color: $primaryColor;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2em;
+                padding-left: 0.4em;
+
+
+                &::placeholder {
+                    color: $accentColor;
+                }
+
+
+            }
+
+            input {
+                padding-bottom: 0.5em;
+            }
+
+            textarea {
+                border: 1px solid $accentColor;
+                resize: none;
+                padding-top: 0.4em;
+                margin-top: 4vh;
+
+            }
+
+            button {
+                background-color: $accentColor;
+                border: none;
+                padding: 0.7em 1.2em;
+                font-size: 1em;
+                width: 45vw;
+                margin: auto;
+                margin-top: 2vh;
+                cursor: pointer;
+
+                &:hover {
+                    transition: ease 0.3s;
+                    transform: scale(0.88);
+                }
+            }
+        }
     }
 
     footer {
