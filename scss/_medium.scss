@@ -183,10 +183,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1em;
+            min-height: 30vh;
 
             img {
                 width: 100%;
-                height: 100%;
+                height: 30vh;
 
             }
 
