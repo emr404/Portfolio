@@ -48,7 +48,7 @@
             <img class="html" src="./images/html.png" alt="HTML logo" title="HTML">
             <img class="css" src="./images/css.png" alt="CSS logo" title="CSS">
             <img class="sass" src="./images/sass.png" alt="Sass logo" title="Sass">
-            <img class="js" src="./images/js.png" alt="JavaScriptlogo" title="JavaScript">
+            <img class="js" src="./images/js.png" alt="JavaScript logo" title="JavaScript">
             <img class="react" src="./images/react.png" alt="React logo" title="React">
             <img class="cjs" src="./images/chartjs.png" alt="ChartJS logo" title="ChartJS">
             <img class="xd" src="./images/adobe-xd.png" alt="AdobeXD logo" title="AdobeXD">
@@ -67,7 +67,7 @@
                     <div class="project">
                         <img src="./images/f1dv.png" alt="F1DV screenshot">
                         <h2 class="projectTitle">F1DV</h2>
-                        <p class="projectDescription">Formula One Data Visualization fetches both historical and current data for formula one races from an API and displays them into different graphs and charts. Users are able to filter the type of information they need. </p>
+                        <p class="projectDescription">Formula One Data Visualizer is a Single Page Application built using React.js and  React routers that fetches and filters both historical and current data from an API and displays them into different graphs and charts using the Chart.js library </p>
                         <img class="toolsUsed" src="./images/react.png" alt="React logo" title="React">
                         <img class="toolsUsed" src="./images/sass.png" alt="Sass logo" title="Sass">
                         <img class="toolsUsed" src="./images/chartjs.png" alt="ChartJS logo" title="ChartJS">
@@ -81,7 +81,7 @@
             
                         <img src="./images/wta.png" alt="Whats the accent screenshot">
                         <h2 class="projectTitle">What's The Accent</h2>
-                        <p class="projectDescription">This game allows users generate random accents and quotes (from an API), they say the quotes in the generated accents, and opponents guess the accent and potentially win points. It was built in React.js using Hooks and Context api. </p>
+                        <p class="projectDescription">This game allows users generate random accents and quotes (from an API), they say the quotes in the generated accents and opponents guess the accent and potentially win points. It was built in React.js using Hooks and Context api. </p>
                         <img class="toolsUsed" src="./images/react.png" alt="React logo" title="React">
                         <img class="toolsUsed" src="./images/sass.png" alt="Sass logo" title="Sass">
             
@@ -95,7 +95,7 @@
                     <div class="project">
                         <img src="./images/atlisF.png" alt="Atlis screenshot">
                         <h2 class="projectTitle">Atlis</h2>
-                        <p class="projectDescription">Atlis is a fictional e-commerce store for a furniture company. This app was uses the localStorage as the "database" to store and retrieve data. </p>
+                        <p class="projectDescription">Atlis is a fictional e-commerce store for a furniture company. This app was uses the localStorage which acts as the "database" to store and retrieve data. </p>
                         <img class="toolsUsed" src="./images/html.png" alt="HTML logo" title="HTML">
                         <img class="toolsUsed" src="./images/sass.png" alt="Sass logo" title="Sass">
                         <img class="toolsUsed" src="./images/js.png" alt="JavaScriptlogo" title="JavaScript">
@@ -120,12 +120,12 @@
                     <div class="project">
                         <img src="./images/mxcorp.png" alt="MX Corp screenshot">
                         <h2 class="projectTitle">MX Corp</h2>
-                        <p class="projectDescription">This is a landing page for a fictional architectural firm.
-                            It was built with responsiveness and UX in mind.
+                        <p class="projectDescription">This is a three page website for a fictional architectural firm.
+                            It was built using the mobile first, responsive design principle.
                         </p>
-                        <img class="toolsUsed" src="./images/html.png">
-                        <img class="toolsUsed" src="./images/sass.png">
-                        <img class="toolsUsed" src="./images/js.png">
+                        <img class="toolsUsed" src="./images/html.png" alt="HTML logo">
+                        <img class="toolsUsed" src="./images/sass.png" alt="Sass logo">
+                        <img class="toolsUsed" src="./images/js.png" alt="JavaScript logo">
                     
                         <div class="projectLink">
                             <a href="https://github.com/emr404/MX-Corp" target="_blank">Code</a> <a href="https://emr404.github.io/MX-Corp/" target="_blank"> Live Demo</a>
@@ -154,4 +154,46 @@
             
 </body>
 <script src="./js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+
+<script type="text/javascript">
+    // Select all links with hashes
+    $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function (event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function () {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        };
+                    });
+                }
+            }
+        });
+</script>
 </html>
