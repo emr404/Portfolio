@@ -13,11 +13,13 @@ $backgroundColor: black;
     list-style: none;
     text-decoration: none;
     outline: none;
+    
 }
 
 body {
     background-color: $backgroundColor;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -30,5 +32,5 @@ hr.horizontal-rule {
 @import './small';
 @import './medium';
 @import './large';
-/* @import './xlarge'; */
+@import './xlarge';
 
