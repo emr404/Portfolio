@@ -59,7 +59,7 @@
                 }
 
                 &:hover {
-                    color: $accentColor$backgroundColor;
+                    color: $backgroundColor;
                     background-color: $accentColor;
                     transition: 1s;
                     border: 1px solid $accentColor;
@@ -196,11 +196,12 @@
             p {
                 color: $primaryColor;
                 margin-top: 5%;
+                min-height: 10vh;
             }
 
 
             .projectLink {
-                margin-top: 1%;
+                margin-top: auto;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
