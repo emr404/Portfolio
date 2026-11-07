@@ -23,62 +23,39 @@
 </head>
 
 <body style="position: relative;">
-    <div class="main-body" id="home">
-        <div class="intro">
-            <h2>Hi, I'm</h2>
-            <h1>Edouard Roufay</h1>
-            <h2>Front-end &amp; UI engineer<span class="dot">.</span></h2>
-            <p>
-                A front-end and UI engineer passionate about
-                building visually appealing, functional applications and interfaces
-                across different screen sizes.
-            </p>
-            <div class="resume-socials">
-                <a href="https://drive.google.com/file/d/18PrUdbnHB6Y9-Pu66TUFjDKtD37MoD1s/view?usp=sharing"
-                    target="_blank"><button class="resumeBtn"> Resume</button></a>
-                <ul class="socials">
-                    <li> <a href="https://github.com/emr404" target="_blank"><img src="./images/github.png"
-                                alt="github logo" title="GitHub"> </a> </li>
-                    <li> <a href="mailto:roufaym@gmail.com" target="_blank"> <img src="./images/gmail.png"
-                                alt="gmail logo" title="Gmail"></a></li>
-                    <li> <a href="https://www.linkedin.com/in/edouardroufay/" target="_blank"> <img
-                                src="./images/linkedin.png" alt="linkedIn logo" title="LinkedIn"></a> </li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-
-    <nav class="navigation">
+    <nav class="navigation" aria-label="Main navigation">
+        <a class="nameLogo" href="#home" aria-label="Edouard Roufay — home">Edouard Roufay</a>
         <ul class="nav-buttons">
-            <li> <a href="#home">Home</a> </li>
-            <li> <a href="#skills">Skills</a> </li>
-            <li> <a href="#projects">Projects</a> </li>
+            <li> <a href="#projects">Featured work</a> </li>
+            <li> <a href="#experience">Experience</a> </li>
         </ul>
     </nav>
 
-    <div class="skills" id="skills">
-        <hr color='black' class="horizontal-rule">
-        <h1>Skills</h1>
-        <div class="skills-img-container">
-            <img class="html" src="./images/html.png" alt="HTML logo" title="HTML">
-            <img class="css" src="./images/css.png" alt="CSS logo" title="CSS">
-            <img class="sass" src="./images/sass.png" alt="Sass logo" title="Sass">
-            <img class="tailwind" src="./images/tailwind.png" alt="Tailwind logo" title="Tailwind">
-            <img class="js" src="./images/js.png" alt="JavaScript logo" title="JavaScript">
-            <img class="typescript" src="./images/typescript.png" alt="Typescript logo" title="Typescript">
-            <img class="react" src="./images/react.png" alt="React logo" title="React">
-            <img class="vue" src="./images/vue.png" alt="Vue logo" title="Vue">
-            <img class="cjs" src="./images/chartjs.png" alt="ChartJS logo" title="ChartJS">
-            <img class="xd" src="./images/adobe-xd.png" alt="AdobeXD logo" title="AdobeXD">
-            <img class="git" src="./images/git.png" alt="Git logo" title="Git">
-
+    <div class="main-body" id="home">
+        <div class="skills" id="skills">
+            <ul class="skills-img-container" aria-label="Technical skills" tabindex="0">
+                <li class="skill"><img src="./images/js.png" alt="" width="20" height="20"><span>JavaScript</span></li>
+                <li class="skill"><img src="./images/typescript.png" alt="" width="20" height="20"><span>TypeScript</span></li>
+                <li class="skill"><img src="./images/react.png" alt="" width="20" height="20"><span>React</span></li>
+                <li class="skill"><img class="nextjs-logo" src="./images/nextjs.svg" alt="" width="20" height="20"><span>Next.js</span></li>
+                <li class="skill"><img src="./images/vue.png" alt="" width="20" height="20"><span>Vue</span></li>
+                <li class="skill"><img src="./images/tailwind.png" alt="" width="20" height="20"><span>Tailwind CSS</span></li>
+                <li class="skill"><img src="./images/chartjs.png" alt="" width="20" height="20"><span>Chart.js</span></li>
+                <li class="skill"><img src="./images/pixijs.svg" alt="" width="20" height="20"><span>PixiJS</span></li>
+                <li class="skill"><img src="./images/playwright.svg" alt="" width="20" height="20"><span>Playwright</span></li>
+                <li class="skill"><img src="./images/ci-cd.svg" alt="" width="20" height="20"><span>CI/CD</span></li>
+                <li class="skill"><img class="mcp-logo" src="./images/mcp.svg" alt="" width="20" height="20"><span>MCP</span></li>
+                <li class="skill"><img src="./images/ai.svg" alt="" width="20" height="20"><span>AI</span></li>
+                <li class="skill"><img src="./images/adobe-xd.png" alt="" width="20" height="20"><span>Adobe XD</span></li>
+            </ul>
         </div>
     </div>
+
+
     <div class="projects" id="projects">
-        <hr color=black class="horizontal-rule">
-        <h1>Projects</h1>
-        <div class="projectsContainer">
+        <h1>Featured work</h1>
+        <div class="projectsContainer projectCarousel" id="project-carousel" role="region"
+            aria-roledescription="carousel" aria-label="Featured projects" tabindex="0">
             <div class="project">
                 <img src="./images/pulse-trading.png" alt="Ledger dashboard with a candlestick chart, stock watchlist and paper trading order ticket">
                 <h2 class="projectTitle">Ledger</h2>
@@ -147,6 +124,70 @@
             </div>
         </div>
 
+        <div class="carouselControls" hidden>
+            <button type="button" class="carouselPrevious" aria-label="Previous project" aria-controls="project-carousel">&#8592;</button>
+            <span class="carouselPosition" aria-live="polite" aria-atomic="true"></span>
+            <button type="button" class="carouselNext" aria-label="Next project" aria-controls="project-carousel">&#8594;</button>
+        </div>
+
+
+    </div>
+
+    <section class="experience" id="experience" aria-labelledby="experience-heading">
+        <h1 id="experience-heading">Experience</h1>
+        <ol class="experienceTimeline" aria-label="Professional experience, most recent first">
+            <li>
+                <p class="experienceDates">Apr 2026 &mdash; Present</p>
+                <div class="experienceDetails">
+                    <h2>Senior Frontend Engineer</h2>
+                    <p class="experienceCompany">gdotv</p>
+                    <ul class="roleHighlights" aria-label="Role highlights">
+                        <li>Led frontend development, improving navigation, graph exploration, dashboard workflows, performance and consistency across desktop and web.</li>
+                        <li>Built a comprehensive automated testing platform across graph database backends, improving reliability, diagnostics and release confidence.</li>
+                        <li>Architected Model Context Protocol (MCP) rendering engines, enabling AI agents to dynamically render live query data into interactive charts and dashboard components.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p class="experienceDates">Oct 2025 &mdash; Apr 2026</p>
+                <div class="experienceDetails">
+                    <h2>Frontend Engineer</h2>
+                    <p class="experienceCompany">Safiyaa</p>
+                    <ul class="roleHighlights" aria-label="Role highlights">
+                        <li>Developed and maintained components for a bespoke internal CRM covering clients, orders, appointments and task tracking.</li>
+                        <li>Optimised server-side rendering to improve application performance, reliability and data consistency.</li>
+                        <li>Collaborated with product and engineering teams to deliver user-focused features and iterative improvements.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p class="experienceDates">Mar 2021 &mdash; Oct 2025</p>
+                <div class="experienceDetails">
+                    <h2>Frontend Developer</h2>
+                    <p class="experienceCompany">Sportlight</p>
+                    <ul class="roleHighlights" aria-label="Role highlights">
+                        <li>Led a sports data portal rebuild with WCAG 2.1 AA-accessible visualisations, supporting customer acquisition and investor interest.</li>
+                        <li>Developed real-time visualisations of player movements during training sessions.</li>
+                        <li>Implemented CI/CD pipelines to streamline release workflows, automate deployments and reduce delivery time.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p class="experienceDates">Apr 2018 &mdash; Jan 2019</p>
+                <div class="experienceDetails">
+                    <h2>Frontend Developer (Intern)</h2>
+                    <p class="experienceCompany">HiiT Plc</p>
+                    <ul class="roleHighlights" aria-label="Role highlights">
+                        <li>Assisted backend engineers in delivering full-stack applications on time with smooth integration.</li>
+                        <li>Built mobile-first, responsive interfaces to improve accessibility across devices.</li>
+                        <li>Worked with designers to turn mock-ups into user-friendly interfaces that met design specifications.</li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <div class="projects archivedProjects" id="archive">
         <details class="projectArchive">
             <summary>Archived projects</summary>
             <div class="projectsContainer">
@@ -199,10 +240,22 @@
                 </div>
             </div>
         </details>
-
     </div>
+
+    <nav class="contactRail" aria-label="Contact and profiles">
+        <a href="https://github.com/emr404" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <img src="./images/github.png" alt="" width="28" height="28">
+        </a>
+        <a href="mailto:roufaym@gmail.com" aria-label="Email Edouard" title="Email">
+            <img src="./images/gmail.png" alt="" width="28" height="28">
+        </a>
+        <a href="https://www.linkedin.com/in/edouardroufay/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <img src="./images/linkedin.png" alt="" width="28" height="28">
+        </a>
+    </nav>
+
     <footer>
-        <p>Copyright &copy; <span class="year"></span> Edouard Roufay</p>
+        <p>Built by Edouard Roufay.</p>
     </footer>
 
 </body>
