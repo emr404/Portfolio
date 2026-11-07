@@ -34,6 +34,33 @@ hr.horizontal-rule {
 @import './large';
 @import './xlarge';
 
+.projectArchive {
+    margin-top: 3rem;
+
+    summary {
+        margin: 0 10%;
+        padding: 0.75em 0;
+        color: $accentColor;
+        cursor: pointer;
+        list-style: disclosure-closed;
+
+        &:focus-visible {
+            outline: 2px solid $accentColor;
+            outline-offset: 4px;
+        }
+    }
+
+    &[open] > summary {
+        list-style: disclosure-open;
+    }
+}
+
+@media (min-width: 1025px) {
+    .projectArchive summary {
+        margin: 0 20%;
+    }
+}
+
 .projects .projectsContainer {
     .project {
         display: flex;

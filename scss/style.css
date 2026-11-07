@@ -1065,6 +1065,29 @@ hr.horizontal-rule {
     padding: 0.8em;
   }
 }
+.projectArchive {
+  margin-top: 3rem;
+}
+.projectArchive summary {
+  margin: 0 10%;
+  padding: 0.75em 0;
+  color: #ceb215;
+  cursor: pointer;
+  list-style: disclosure-closed;
+}
+.projectArchive summary:focus-visible {
+  outline: 2px solid #ceb215;
+  outline-offset: 4px;
+}
+.projectArchive[open] > summary {
+  list-style: disclosure-open;
+}
+
+@media (min-width: 1025px) {
+  .projectArchive summary {
+    margin: 0 20%;
+  }
+}
 .projects .projectsContainer .project {
   display: flex;
   flex-direction: column;
