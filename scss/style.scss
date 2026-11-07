@@ -333,16 +333,14 @@ hr.horizontal-rule {
     }
 }
 
-.contactRail {
-    position: fixed;
-    top: 50%;
-    right: clamp(12px, 2vw, 24px);
-    transform: translateY(-50%);
-    z-index: 10;
+.contactLinks {
+    position: static;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background: $backgroundColor;
+    justify-content: center;
+    gap: 16px;
+    width: 80%;
+    margin: 2rem auto 0;
+    background: transparent;
 
     a {
         display: grid;
@@ -368,7 +366,7 @@ hr.horizontal-rule {
 }
 
 @media (max-width: 600px) {
-    .contactRail {
+    .contactLinks {
         right: 2px;
         gap: 4px;
 
@@ -505,7 +503,7 @@ hr.horizontal-rule {
         transition: color 180ms ease, background-color 180ms ease, opacity 180ms ease;
     }
 
-    .contactRail img {
+    .contactLinks img {
         transition: transform 180ms ease;
     }
 }
@@ -745,4 +743,61 @@ hr.horizontal-rule {
         font-size: 0.75rem;
         line-height: 1.5;
     }
+}
+
+@media (max-width: 768px) {
+    .contactLinks {
+        position: static;
+        top: auto;
+        right: auto;
+        z-index: auto;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        width: 80%;
+        margin: 2rem auto 0;
+
+        a {
+            width: 44px;
+        }
+
+        img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+:root {
+    --page-gutter: clamp(16px, 3vw, 48px);
+}
+
+.navigation,
+.main-body,
+.experience,
+.contactLinks {
+    width: calc(100% - 2 * var(--page-gutter));
+    margin-left: var(--page-gutter);
+    margin-right: var(--page-gutter);
+}
+
+.projects {
+    width: 100%;
+
+    > h1 {
+        margin-left: var(--page-gutter);
+        margin-right: var(--page-gutter);
+    }
+
+    .projectsContainer {
+        margin-left: var(--page-gutter);
+        margin-right: var(--page-gutter);
+    }
+}
+
+.projectArchive summary,
+.carouselControls {
+    margin-left: var(--page-gutter);
+    margin-right: var(--page-gutter);
 }

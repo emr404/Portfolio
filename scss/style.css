@@ -1321,45 +1321,43 @@ hr.horizontal-rule {
   margin: 0;
 }
 
-.contactRail {
-  position: fixed;
-  top: 50%;
-  right: clamp(12px, 2vw, 24px);
-  transform: translateY(-50%);
-  z-index: 10;
+.contactLinks {
+  position: static;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: black;
+  justify-content: center;
+  gap: 16px;
+  width: 80%;
+  margin: 2rem auto 0;
+  background: transparent;
 }
-.contactRail a {
+.contactLinks a {
   display: grid;
   place-items: center;
   width: 44px;
   height: 44px;
 }
-.contactRail a:hover img {
+.contactLinks a:hover img {
   transform: translateY(-2px);
 }
-.contactRail a:focus-visible {
+.contactLinks a:focus-visible {
   outline: 2px solid #ceb215;
   outline-offset: 2px;
 }
-.contactRail img {
+.contactLinks img {
   display: block;
   width: 28px;
   height: 28px;
 }
 
 @media (max-width: 600px) {
-  .contactRail {
+  .contactLinks {
     right: 2px;
     gap: 4px;
   }
-  .contactRail a {
+  .contactLinks a {
     width: 28px;
   }
-  .contactRail img {
+  .contactLinks img {
     width: 22px;
     height: 22px;
   }
@@ -1494,7 +1492,7 @@ hr.horizontal-rule {
   .carouselControls button {
     transition: color 180ms ease, background-color 180ms ease, opacity 180ms ease;
   }
-  .contactRail img {
+  .contactLinks img {
     transition: transform 180ms ease;
   }
 }
@@ -1699,6 +1697,58 @@ hr.horizontal-rule {
   color: rgba(255, 255, 255, 0.65);
   font-size: 0.75rem;
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .contactLinks {
+    position: static;
+    top: auto;
+    right: auto;
+    z-index: auto;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    width: 80%;
+    margin: 2rem auto 0;
+  }
+  .contactLinks a {
+    width: 44px;
+  }
+  .contactLinks img {
+    width: 28px;
+    height: 28px;
+  }
+}
+:root {
+  --page-gutter: clamp(16px, 3vw, 48px);
+}
+
+.navigation,
+.main-body,
+.experience,
+.contactLinks {
+  width: calc(100% - 2 * var(--page-gutter));
+  margin-left: var(--page-gutter);
+  margin-right: var(--page-gutter);
+}
+
+.projects {
+  width: 100%;
+}
+.projects > h1 {
+  margin-left: var(--page-gutter);
+  margin-right: var(--page-gutter);
+}
+.projects .projectsContainer {
+  margin-left: var(--page-gutter);
+  margin-right: var(--page-gutter);
+}
+
+.projectArchive summary,
+.carouselControls {
+  margin-left: var(--page-gutter);
+  margin-right: var(--page-gutter);
 }
 
 /*# sourceMappingURL=style.css.map */
