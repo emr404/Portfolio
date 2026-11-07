@@ -34,3 +34,29 @@ hr.horizontal-rule {
 @import './large';
 @import './xlarge';
 
+.projects .projectsContainer {
+    .project {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .projectDescription {
+        flex: 1;
+    }
+
+    .projectTools {
+        display: flex;
+        gap: 4px;
+        margin-top: 5%;
+
+        .toolsUsed {
+            margin-top: 0;
+        }
+    }
+
+    .projectLink {
+        margin-top: 0;
+    }
+}
+

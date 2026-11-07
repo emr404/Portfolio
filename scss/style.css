@@ -1065,5 +1065,24 @@ hr.horizontal-rule {
     padding: 0.8em;
   }
 }
+.projects .projectsContainer .project {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.projects .projectsContainer .projectDescription {
+  flex: 1;
+}
+.projects .projectsContainer .projectTools {
+  display: flex;
+  gap: 4px;
+  margin-top: 5%;
+}
+.projects .projectsContainer .projectTools .toolsUsed {
+  margin-top: 0;
+}
+.projects .projectsContainer .projectLink {
+  margin-top: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
